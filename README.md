@@ -54,149 +54,171 @@ Upload to GitHub Pages for free hosting.
 ## Reg No: 212225040179
 ## PROGRAM
 ## HTML
-```
+```c
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUXORA - Signature Collection</title>
+    <title>FragranceLux - Luxury Perfumes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<section class="collection" id="collection">
-
-    <div class="section-heading">
-        <p>DISCOVER YOUR FRAGRANCE</p>
-        <h1>Our Signature Collection</h1>
-        <span>Luxury fragrances for every moment.</span>
-    </div>
-
-    <div class="product-container">
-
-        <!-- Product 1 -->
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600" alt="Noir Elegance">
-            <div class="details">
-                <span class="category">FOR MEN</span>
-                <h2>Noir Elegance</h2>
-                <p>Bold • Elegant • Timeless</p>
-                <div class="bottom">
-                    <strong>₹2,499</strong>
-                    <button>🛒 ADD TO CART</button>
-                </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+            <div>
+                <h2>FragranceLux</h2>
+                <p>Live Elegant. Smell Divine.</p>
             </div>
         </div>
 
-        <!-- Product 2 -->
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600" alt="Rose Essence">
-            <div class="details">
-                <span class="category">FOR WOMEN</span>
-                <h2>Rose Essence</h2>
-                <p>Floral • Fresh • Romantic</p>
-                <div class="bottom">
-                    <strong>₹1,999</strong>
-                    <button>🛒 ADD TO CART</button>
-                </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#categories">Shop <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#about">About</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-icons">
+            <input type="text" placeholder="Search perfumes...">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-title">DISCOVER YOUR FRAGRANCE</p>
+            <h1>Our Signature Collection</h1>
+            <p class="tagline">Luxury fragrances for every moment.</p>
+            <a href="#categories" class="shop-btn">
+                Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="about">
+
+        <div class="service">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h3>Free Shipping</h3>
+                <p>On orders above ₹999</p>
             </div>
         </div>
 
-        <!-- Product 3 -->
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=600" alt="Golden Oud">
-            <div class="details">
-                <span class="category">UNISEX</span>
-                <h2>Golden Oud</h2>
-                <p>Rich • Warm • Luxurious</p>
-                <div class="bottom">
-                    <strong>₹2,999</strong>
-                    <button>🛒 ADD TO CART</button>
-                </div>
+        <div class="service">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+                <h3>Secure Payment</h3>
+                <p>100% Secure & Trusted</p>
             </div>
         </div>
 
-        <!-- Product 4 -->
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600" alt="Ocean Mist">
-            <div class="details">
-                <span class="category">UNISEX</span>
-                <h2>Ocean Mist</h2>
-                <p>Fresh • Cool • Refreshing</p>
-                <div class="bottom">
-                    <strong>₹1,799</strong>
-                    <button>🛒 ADD TO CART</button>
-                </div>
+        <div class="service">
+            <i class="fa-solid fa-gift"></i>
+            <div>
+                <h3>Special Offers</h3>
+                <p>Save More, Smell Better</p>
             </div>
         </div>
 
-        <!-- Product 5 -->
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1595535373192-fc8935bacd89?w=600" alt="Royal Amber">
-            <div class="details">
-                <span class="category">PREMIUM</span>
-                <h2>Royal Amber</h2>
-                <p>Warm • Deep • Classic</p>
-                <div class="bottom">
-                    <strong>₹2,699</strong>
-                    <button>🛒 ADD TO CART</button>
-                </div>
+        <div class="service">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+                <h3>24/7 Support</h3>
+                <p>We're here to help</p>
             </div>
         </div>
 
-        <!-- Product 6 -->
-        <div class="product-card">
-           <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=600" alt="Mystic Bloom">
-            <div class="details">
-                <span class="category">FOR WOMEN</span>
-                <h2>Mystic Bloom</h2>
-                <p>Soft • Floral • Charming</p>
-                <div class="bottom">
-                    <strong>₹2,199</strong>
-                    <button>🛒 ADD TO CART</button>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+
+        <h2 class="section-title">Shop by Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600" alt="Men Perfume">
+                <div class="category-name">
+                    <h3>For Men</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
-        </div>
 
-        <!-- Product 7 -->
-        <div class="product-card">
-            <img src="https://www.adipec.com.br/uploads/news/68965113d40c3.jpg" alt="Velvet Night">
-            <div class="details">
-                <span class="category">PREMIUM</span>
-                <h2>Velvet Night</h2>
-                <p>Mysterious • Rich • Bold</p>
-                <div class="bottom">
-                    <strong>₹3,199</strong>
-                    <button>🛒 ADD TO CART</button>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600" alt="Women Perfume">
+                <div class="category-name">
+                    <h3>For Women</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
-        </div>
 
-        <!-- Product 8 -->
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600" alt="Crystal Touch">
-            <div class="details">
-                <span class="category">UNISEX</span>
-                <h2>Crystal Touch</h2>
-                <p>Modern • Light • Fresh</p>
-                <div class="bottom">
-                    <strong>₹1,899</strong>
-                    <button>🛒 ADD TO CART</button>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600" alt="Unisex Perfume">
+                <div class="category-name">
+                    <h3>Unisex</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
+
+            <div class="category-card">
+                 <img src="https://www.adipec.com.br/uploads/news/68965113d40c3.jpg" alt="Premium Perfume">
+                <div class="category-name">
+                    <h3>Premium</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="category-card">
+                 <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=600" alt="Luxury Perfume">
+                <div class="category-name">
+                    <h3>Luxury</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Offer Banner -->
+    <section class="offer" id="offers">
+        <div class="offer-text">
+            <p>Get Up to</p>
+            <h2>50% OFF</h2>
         </div>
 
-    </div>
-</section>
+        <div class="offer-description">
+            <p>On Selected Fragrances</p>
+            <a href="#categories">
+                Shop the Deal <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>FragranceLux</h2>
+        <p>Discover your signature fragrance with us.</p>
+        <p>© 2026 FragranceLux. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
-```
-## CSS
 
 ```
+## CSS
+```c
 
 * {
     margin: 0;
@@ -204,180 +226,404 @@ Upload to GitHub Pages for free hosting.
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Georgia, serif;
-    background: #f5dfc2;
-    color: #42230f;
-}
-
-/* Main Collection Background */
-.collection {
-    width: 100%;
-    min-height: 100vh;
-    padding: 35px 6%;
-    background:
-        linear-gradient(rgba(255, 237, 210, 0.78),
-                        rgba(225, 180, 125, 0.65)),
-        url("https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1600");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-/* Heading */
-.section-heading {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.section-heading p {
     font-family: Arial, sans-serif;
+    background: #fff2e2;
+    color: #49230f;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    min-height: 75px;
+    padding: 10px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff8ee;
+    border-bottom: 1px solid #e6c9a9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo > i {
+    font-size: 38px;
+    color: #8b351e;
+}
+
+.logo h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+}
+
+.logo p {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #49230f;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 13px;
+}
+
+nav a:hover,
+nav .active {
+    background: #870d20;
+    color: white;
+    border-radius: 8px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.header-icons input {
+    width: 190px;
+    padding: 11px 15px;
+    border: 1px solid #dfc4a6;
+    border-radius: 25px;
+    background: transparent;
+    outline: none;
+}
+
+.header-icons i {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    min-height: 340px;
+    background:
+        linear-gradient(90deg, rgba(255,225,191,0.35), rgba(255,225,191,0.05)),
+        url("https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1800")
+        center 45% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 45px 9%;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-title {
     font-size: 14px;
     letter-spacing: 5px;
     font-weight: bold;
-    color: #87501e;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
-.section-heading h1 {
-    font-size: 48px;
-    font-weight: normal;
-    margin-bottom: 8px;
-    color: #40200d;
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 5vw, 65px);
+    margin-bottom: 12px;
 }
 
-.section-heading span {
-    font-size: 20px;
-    color: #87501e;
+.tagline {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 27px;
+    margin-bottom: 28px;
 }
 
-/* Product Grid */
-.product-container {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 22px;
-    max-width: 1450px;
-    margin: auto;
-}
-
-/* Product Card */
-.product-card {
-    background: #fff0dc;
-    border: 2px solid #e4c49e;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 7px 18px rgba(79, 43, 16, 0.2);
-    transition: 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 14px 25px rgba(79, 43, 16, 0.3);
-}
-
-.product-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    transition: 0.4s;
-}
-
-.product-card:hover img {
-    transform: scale(1.04);
-}
-
-/* Product Details */
-.details {
-    padding: 12px 15px 16px;
-}
-
-.category {
+.shop-btn {
     display: inline-block;
-    background: #f2d5a9;
-    color: #512c12;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.details h2 {
-    font-size: 23px;
-    margin: 9px 0 5px;
-    color: #40200d;
-}
-
-.details p {
-    font-family: Arial, sans-serif;
-    color: #95602e;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-/* Price and Button */
-.bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-}
-
-.bottom strong {
-    font-size: 21px;
-    white-space: nowrap;
-}
-
-.bottom button {
-    background: #3b1d0c;
+    background: #870d20;
     color: white;
-    border: none;
-    border-radius: 7px;
-    padding: 12px 13px;
-    font-size: 11px;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
     font-weight: bold;
-    cursor: pointer;
+}
+
+.shop-btn i {
+    margin-left: 10px;
+}
+
+.shop-btn:hover {
+    background: #50100d;
+}
+
+/* Services */
+.services {
+    margin: 15px 5%;
+    padding: 18px;
+    background: #fcebd7;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    border-right: 1px solid #dfc6a7;
+    padding: 5px;
+}
+
+.service:last-child {
+    border: none;
+}
+
+.service i {
+    font-size: 35px;
+}
+
+.service h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.service p {
+    font-size: 12px;
+}
+
+/* Categories */
+.categories {
+    padding: 15px 5% 35px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin-bottom: 22px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.category-card {
+    background: #fff0dd;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e6cdb2;
+    box-shadow: 0 3px 8px rgba(80, 40, 10, 0.1);
     transition: 0.3s;
 }
 
-.bottom button:hover {
-    background: #a66c2d;
+.category-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 18px rgba(80, 40, 10, 0.2);
 }
 
-/* Tablet */
+.category-card img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    display: block;
+}
+
+.category-name {
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-name h3 {
+    font-size: 16px;
+}
+
+.category-name i {
+    background: #54270f;
+    color: white;
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+/* Offer Banner */
+.offer {
+    margin: 0 3% 30px;
+    min-height: 115px;
+    padding: 15px 13%;
+    border-radius: 18px;
+    background:
+        linear-gradient(90deg, rgba(85,0,15,0.95), rgba(110,0,20,0.75)),
+        url("https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=1500")
+        center / cover;
+    color: #ffe0a0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offer-text p {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.offer-text h2 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+}
+
+.offer-description {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.offer-description p {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.offer-description a {
+    background: #ffecd1;
+    color: #54230d;
+    padding: 14px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Footer */
+footer {
+    background: #54230f;
+    color: #fff0dd;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin: 8px;
+    font-size: 13px;
+}
+
+/* Responsive Design */
 @media (max-width: 1000px) {
-    .product-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .service:nth-child(2) {
+        border-right: none;
+    }
+
+    .offer {
+        padding: 20px 5%;
     }
 }
 
-/* Mobile */
-@media (max-width: 550px) {
-    .collection {
-        padding: 30px 15px;
+@media (max-width: 600px) {
+    .header {
+        justify-content: center;
     }
 
-    .section-heading h1 {
-        font-size: 32px;
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .section-heading span {
-        font-size: 15px;
+    .header-icons input {
+        width: 150px;
     }
 
-    .product-container {
+    .hero {
+        min-height: 300px;
+        padding: 30px 6%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .tagline {
+        font-size: 20px;
+    }
+
+    .services {
         grid-template-columns: 1fr;
     }
 
-    .product-card img {
-        height: 250px;
+    .service {
+        justify-content: flex-start;
+        border-right: none;
+        border-bottom: 1px solid #dfc6a7;
+        padding: 12px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .category-card img {
+        height: 120px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .offer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .offer-description {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .offer-text h2 {
+        font-size: 40px;
     }
 }
 ```
 ## OUTPUT
 
-![alt text](image.png)
-
+![alt text](<Screenshot 2026-11-02 223313.png>)
+![alt text](<Screenshot 2026-11-02 223342.png>)
 ## RESULT
 The program for creating commercial website using CSS Flexbox is executed successfully.
